@@ -23,7 +23,7 @@ const loginUser = async (e) => {
         const data = response.data
         if (data.data.token) {
             saveLocalStorageToken("token", data.data.token)
-            $box.innerHTML = "Please Wait..."
+            $loginForm.innerHTML = "Please Wait..."
             setTimeout( () => {
                 console.log(location.origin)
                 location.replace(location.origin + "/pages/home.html")

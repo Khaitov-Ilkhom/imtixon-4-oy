@@ -18,7 +18,6 @@ const addingPost = async (e) => {
         image : $img.value,
         description : $desc.value
     }
-    console.log(post)
 
     try {
         const response = await axios.post("/blogs", post)
@@ -28,6 +27,8 @@ const addingPost = async (e) => {
     catch (error) {
         console.log(error)
     }
+
+    $form.reset()
 }
 
 $form.addEventListener("submit", addingPost)
