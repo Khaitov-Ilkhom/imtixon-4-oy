@@ -79,11 +79,22 @@ body {
     width: 100%;
     padding: 20px;
 }
-.input-box h3 {
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title h3 {
     font-size: 32px;
     font-weight: 600;
     padding-bottom: 8px;
     color: white;
+}
+.title a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
 }
 #post-form {
     max-width: 900px;
