@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="wrapper">
+        <div class="left-box">
+            <h2>Dashboard</h2>
+            <div class="author-box">
+                <h4 id="author-name">Khaitov Ilkhom</h4>
+                <span>Author</span>
+            </div>
+            <button>Sign Out?</button>
+        </div>
+        <div class="input-box">
+            <h3>Create New Post</h3>
+            <hr>
+            <form id="post-form">
+                <input required id="post-title" type="text">
+                <div class="form-line">
+                    <input required id="post-img" type="url">
+                    <input required id="post-tag" type="text">
+                </div>
+                <input required id="post-description" type="text">
+                <button type="submit">Create Post</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../js/dashboard.js"></script>
+</body>
+</html>

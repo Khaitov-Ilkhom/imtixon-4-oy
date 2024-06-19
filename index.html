@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/register-and-login.css">
+    <title>Register</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="wrapper">
+        <img src="./images/image.svg" alt="Logo">
+        <h2>Sign Up</h2>
+        <form id="form">
+            <input required id="input-name" type="text" placeholder="Firstname">
+            <input required id="input-email" type="email" placeholder="Email">
+            <input required id="input-password" type="password" placeholder="Password">
+            <button type="submit">Sign Up</button>
+        </form>
+        <span>Already have an account? <a href="./pages/login.html">Log In</a></span>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="./js/register.js"></script>
+</body>
+</html>

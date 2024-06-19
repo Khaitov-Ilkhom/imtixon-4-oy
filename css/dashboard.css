@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 1400px;
+    width: 100%;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left-box {
+    max-width: 350px;
+    min-height: 600px;
+    width: 100%;
+    background-color: #f5c147;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.left-box h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+.author-box {
+    max-width: 280px;
+    width: 100%;
+    background-color: white;
+    padding: 30px 15px;
+    margin: 14px 0;
+    border-radius: 20px;
+}
+.author-box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(2, 8, 136, 0.92);
+    padding-bottom: 8px;
+}
+.author-box span {
+    font-weight: 400;
+    color: rgba(2, 8, 136, 0.92);
+}
+.left-box button {
+    padding: 14px 30px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f5c147;
+    border-radius: 20px;
+    border: 1px solid #6c6c6c;
+}
+.input-box {
+    max-width: 950px;
+    width: 100%;
+    padding: 20px;
+}
+.input-box h3 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    color: white;
+}
+#post-form {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#post-form input {
+    padding: 8px;
+    /*margin: 14px 10px;*/
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.form-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#post-title {
+    width: 100%;
+    margin: 16px 0 0 0;
+}
+#post-img {
+    width: 60%;
+    margin: 16px 10px 14px 0;
+}
+#post-tag {
+    width: 40%;
+    margin: 16px 0;
+}
+#post-description {
+    width: 100%;
+    min-height: 100px;
+}
+#post-form button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 40px;
+    border-radius: 20px;
+    background-color: #f5c147;
+    border: none;
+    margin-top: 100px;
+}
