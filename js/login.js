@@ -26,7 +26,7 @@ const loginUser = async (e) => {
             $box.innerHTML = "Please Wait..."
             setTimeout( () => {
                 console.log(location.origin)
-                location.replace(location.origin + "/imtixon/pages/home.html")
+                location.replace(location.origin + "/pages/home.html")
             }, 2000)
         }
     } catch (error) {

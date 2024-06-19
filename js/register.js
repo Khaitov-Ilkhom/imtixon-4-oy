@@ -25,7 +25,7 @@ const createUser = async (e) => {
         if (data.data._id) {
             $registerForm.innerHTML = "Please Wait..."
             setTimeout( () => {
-                location.replace(location.origin + "/imtixon/pages/login.html")
+                location.replace(location.origin + "/pages/login.html")
             }, 2000)
         }
     } catch (error) {
