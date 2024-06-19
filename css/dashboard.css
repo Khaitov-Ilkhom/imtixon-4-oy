@@ -24,16 +24,22 @@ body {
     max-width: 350px;
     min-height: 600px;
     width: 100%;
+    height: 100%;
     background-color: #f5c147;
     border-radius: 40px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 20px;
 }
+.top-text {
+    width: 100%;
+}
 .left-box h2 {
     font-size: 32px;
     font-weight: 600;
+    text-align: center;
 }
 .author-box {
     max-width: 280px;
@@ -53,7 +59,7 @@ body {
     font-weight: 400;
     color: rgba(2, 8, 136, 0.92);
 }
-.left-box button {
+.left-box a {
     padding: 14px 30px;
     color: black;
     font-size: 16px;
@@ -61,6 +67,12 @@ body {
     background-color: #f5c147;
     border-radius: 20px;
     border: 1px solid #6c6c6c;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.left-box a:active {
+    transform: scale(0.9);
+    background-color: rgba(220, 175, 70, 0.82);
 }
 .input-box {
     max-width: 950px;
@@ -96,15 +108,15 @@ body {
 }
 #post-title {
     width: 100%;
-    margin: 16px 0 0 0;
+    margin: 24px 0 0 0;
 }
 #post-img {
     width: 60%;
-    margin: 16px 10px 14px 0;
+    margin: 24px 10px 14px 0;
 }
 #post-tag {
     width: 40%;
-    margin: 16px 0;
+    margin: 28px 0 18px 0;
 }
 #post-description {
     width: 100%;
@@ -118,4 +130,9 @@ body {
     background-color: #f5c147;
     border: none;
     margin-top: 100px;
+    transition: 0.3s;
+}
+#post-form button:active {
+    transform: scale(0.9);
+    background-color: rgba(239, 170, 8, 0.92);
 }

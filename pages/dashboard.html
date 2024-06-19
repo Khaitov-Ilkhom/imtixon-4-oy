@@ -11,23 +11,25 @@
 <div class="container">
     <div class="wrapper">
         <div class="left-box">
-            <h2>Dashboard</h2>
-            <div class="author-box">
-                <h4 id="author-name">Khaitov Ilkhom</h4>
-                <span>Author</span>
+            <div class="top-text">
+                <h2>Dashboard</h2>
+                <div class="author-box">
+                    <h4 id="author-name">Khaitov Ilkhom</h4>
+                    <span>Author</span>
+                </div>
             </div>
-            <button>Sign Out?</button>
+            <a id="log-out" href="./login.html">Sign Out?</a>
         </div>
         <div class="input-box">
             <h3>Create New Post</h3>
             <hr>
             <form id="post-form">
-                <input required id="post-title" type="text">
+                <input required id="post-title" placeholder="Post title" type="text">
                 <div class="form-line">
-                    <input required id="post-img" type="url">
-                    <input required id="post-tag" type="text">
+                    <input required id="post-img" placeholder="Post image url" type="url">
+                    <input required id="post-tag" placeholder="Post tag" type="text">
                 </div>
-                <input required id="post-description" type="text">
+                <input required id="post-description" placeholder="Post description" type="text">
                 <button type="submit">Create Post</button>
             </form>
         </div>
@@ -35,6 +37,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="../js/dashboard.js"></script>
+<script type="module" src="../js/dashboard.js"></script>
 </body>
 </html>

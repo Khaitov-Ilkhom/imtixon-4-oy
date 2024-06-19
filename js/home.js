@@ -14,7 +14,7 @@ const renderData = async () => {
             $div.className = "swiper-slide"
             $div.innerHTML = `
                 <div class="swiper-slide-img">
-                    <a href="./src/pages/blog.html?blog-id=${item._id}">
+                    <a target="_blank" href="/pages/single.html?id=${item._id}">
                         <img id="swiper-slide-img" src="${item.image}" alt="${item.title}">
                     </a>
                 </div>
@@ -30,7 +30,7 @@ const renderData = async () => {
                     <img src="../images/user.jpg" alt="img">
                     <div class="swiper-slide-footer-info">
                         <p class="blog-author">
-                            
+                            ${item.author.slice(0, 6)}
                         </p>
                         <span class="author">
                             Author
